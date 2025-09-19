@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stone, Paper & Scissors Game</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>Stone, Paper & Scissors Game</h1>
+
+  <div class="choices">
+    <div class="choice" id="rock">
+      <img src="rock.png" alt="Rock"/>
+    </div>
+    <div class="choice" id="paper">
+      <img src="paper.png" alt="Paper"/>
+    </div>
+    <div class="choice" id="scissors">
+      <img src="scissors.png" alt="Scissors"/>
+    </div>
+  </div>
+
+  <div class="score-board">
+    <div class="score">
+      <p id="user-score">0</p>
+      <p>You</p>
+    </div>
+    <div class="score">
+      <p id="comp-score">0</p>
+      <p>Comp</p>
+    </div>
+  </div>
+
+  <div class="msg-container">
+    <p id="msg">Play your move</p>
+  </div>
+
+  <div class="buttons">
+    <button id="reset-btn">Reset Game</button>
+    <button id="history-btn">View History</button>
+  </div>
+
+  <!-- Leaderboard Modal -->
+  <div id="history-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Game History</h2>
+      <table id="history-table">
+        <thead>
+          <tr>
+            <th>Round</th>
+            <th>Your Move</th>
+            <th>Computer Move</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody id="history-body">
+          <!-- History will be inserted here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
